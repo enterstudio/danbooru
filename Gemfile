@@ -3,11 +3,11 @@ source 'https://rubygems.org/'
 gem 'dotenv-rails', :require => "dotenv/rails-now"
 
 gem 'protected_attributes'
-gem "sass-rails"
-gem "sprockets-rails", :require => "sprockets/railtie"
+gem "sass-rails", ">= 5.0.6"
+gem "sprockets-rails", ">= 2.3.3"
 gem "uglifier"
 gem "therubyracer", :platforms => :ruby
-gem "rails", "~> 4.2.0"
+gem "rails", "~> 4.2.8"
 gem "pg"
 gem "dalli", :platforms => :ruby
 gem "memcache-client", :platforms => [:mswin, :mingw, :x64_mingw]
