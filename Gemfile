@@ -29,7 +29,7 @@ gem 'capistrano-rails'
 gem 'capistrano-rbenv'
 gem 'radix62', '~> 1.0.1'
 gem 'streamio-ffmpeg'
-gem 'rubyzip', :require => "zip"
+gem 'rubyzip', '>= 1.2.2'
 gem 'stripe'
 gem 'twitter'
 gem 'aws-sdk', '~> 2'
