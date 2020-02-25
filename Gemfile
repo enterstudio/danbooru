@@ -1,13 +1,13 @@
 source 'https://rubygems.org/'
 
-gem 'dotenv-rails', :require => "dotenv/rails-now"
+gem 'dotenv-rails', '>= 2.1.2'
 
 gem 'protected_attributes'
-gem "sass-rails"
+gem "sass-rails", ">= 5.0.6"
 gem "sprockets-rails", :require => "sprockets/railtie"
 gem "uglifier"
 gem "therubyracer", :platforms => :ruby
-gem "rails", "~> 4.2.0"
+gem "rails", "~> 4.2.8"
 gem "pg"
 gem "dalli", :platforms => :ruby
 gem "memcache-client", :platforms => [:mswin, :mingw, :x64_mingw]
@@ -25,15 +25,15 @@ gem 'diff-lcs', :require => "diff/lcs/array", :git => "https://github.com/halost
 gem 'bcrypt-ruby', :require => "bcrypt"
 gem 'statistics2'
 gem 'capistrano', '~> 3.4.0'
-gem 'capistrano-rails'
-gem 'capistrano-rbenv'
+gem 'capistrano-rails', '>= 1.1.3'
+gem 'capistrano-rbenv', '>= 2.0.3'
 gem 'radix62', '~> 1.0.1'
 gem 'streamio-ffmpeg'
 gem 'rubyzip', :require => "zip"
 gem 'stripe'
 gem 'twitter'
 gem 'aws-sdk', '~> 2'
-gem 'responders'
+gem 'responders', '>= 2.3.0'
 gem 'highline'
 gem 'dtext_rb', :git => "https://github.com/r888888888/dtext_rb.git", :require => "dtext"
 gem 'google-api-client'
@@ -49,14 +49,14 @@ gem 'ruby-imagespec', :require => "image_spec", :git => "https://github.com/r888
 
 group :production, :staging do
   gem 'unicorn', :platforms => :ruby
-  gem 'capistrano3-unicorn'
+  gem 'capistrano3-unicorn', '>= 0.2.1'
 end
 
 group :production do
   gem 'unicorn-worker-killer'
   gem 'newrelic_rpm'
   gem 'gctools', :platforms => :ruby
-  gem 'capistrano-deploytags', '~> 1.0.0', require: false
+  gem 'capistrano-deploytags', '~> 1.0.4', require: false
 end
 
 group :development, :test do
