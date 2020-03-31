@@ -30,8 +30,8 @@ gem 'capistrano-rbenv'
 gem 'radix62', '~> 1.0.1'
 gem 'streamio-ffmpeg'
 gem 'rubyzip', :require => "zip"
-gem 'stripe'
-gem 'twitter'
+gem 'stripe', '>= 1.36.1'
+gem 'twitter', '>= 6.0.0'
 gem 'aws-sdk', '~> 2'
 gem 'responders'
 gem 'highline'
@@ -71,7 +71,7 @@ group :test do
   gem "factory_girl"
   gem "mocha", :require => "mocha/setup"
   gem "ffaker"
-  gem "simplecov", :require => false
+  gem "simplecov", ">= 0.13.0", :require => false
   gem "timecop"
   gem "fakeweb"
 end
