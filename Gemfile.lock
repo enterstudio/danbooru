@@ -106,6 +106,7 @@ GEM
     cityhash (0.8.1)
     coderay (1.1.1)
     colorize (0.7.7)
+    connection_pool (2.2.3)
     crass (1.0.2)
     daemons (1.2.3)
     dalli (2.7.6)
@@ -115,7 +116,7 @@ GEM
       activerecord (>= 3.0, < 5.1)
       delayed_job (>= 3.0, < 5)
     docile (1.1.5)
-    domain_name (0.5.24)
+    domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
     dotenv (2.1.2)
     dotenv-rails (2.1.2)
@@ -157,7 +158,7 @@ GEM
     hike (1.2.3)
     http (0.6.4)
       http_parser.rb (~> 0.6.0)
-    http-cookie (1.0.2)
+    http-cookie (1.0.3)
       domain_name (~> 0.5)
     http_parser.rb (0.6.0)
     httpclient (2.8.0)
@@ -176,14 +177,15 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.4)
       mime-types (>= 1.16, < 4)
-    mechanize (2.7.5)
+    mechanize (2.7.7)
       domain_name (~> 0.5, >= 0.5.1)
       http-cookie (~> 1.0)
       mime-types (>= 1.17.2)
       net-http-digest_auth (~> 1.1, >= 1.1.1)
-      net-http-persistent (~> 2.5, >= 2.5.2)
+      net-http-persistent (>= 2.5.2)
       nokogiri (~> 1.6)
       ntlm-http (~> 0.1, >= 0.1.1)
+      webrick (~> 1.7)
       webrobots (>= 0.0.9, < 0.2)
     memcache-client (1.8.5)
     memcache_mock (0.0.14)
@@ -193,7 +195,7 @@ GEM
     metaclass (0.0.4)
     method_source (0.8.2)
     mime-types (2.99.3)
-    mini_portile2 (2.1.0)
+    mini_portile2 (2.4.0)
     minitest (5.10.1)
     mocha (1.2.1)
       metaclass (~> 0.0.1)
@@ -202,7 +204,8 @@ GEM
     multipart-post (2.0.0)
     naught (1.0.0)
     net-http-digest_auth (1.4.1)
-    net-http-persistent (2.9.4)
+    net-http-persistent (4.0.1)
+      connection_pool (~> 2.2)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-sftp (2.1.2)
@@ -210,10 +213,10 @@ GEM
     net-ssh (2.9.2)
     netrc (0.10.3)
     newrelic_rpm (3.13.0.299)
-    nokogiri (1.7.0.1)
-      mini_portile2 (~> 2.1.0)
-    nokogiri (1.7.0.1-x64-mingw32)
-      mini_portile2 (~> 2.1.0)
+    nokogiri (1.10.10)
+      mini_portile2 (~> 2.4.0)
+    nokogiri (1.10.10-x64-mingw32)
+      mini_portile2 (~> 2.4.0)
     nokogumbo (1.2.0)
       nokogiri
     ntlm-http (0.1.1)
@@ -361,14 +364,15 @@ GEM
       execjs (>= 0.3.0, < 3)
     unf (0.1.4)
       unf_ext
-    unf_ext (0.0.7.1)
-    unf_ext (0.0.7.1-x64-mingw32)
+    unf_ext (0.0.7.7)
+    unf_ext (0.0.7.7-x64-mingw32)
     unicorn (5.2.0)
       kgio (~> 2.6)
       raindrops (~> 0.7)
     unicorn-worker-killer (0.4.4)
       get_process_mem (~> 0)
       unicorn (>= 4, < 6)
+    webrick (1.7.0)
     webrobots (0.1.2)
     whenever (0.9.7)
       chronic (>= 0.6.3)
@@ -401,7 +405,7 @@ DEPENDENCIES
   gctools
   google-api-client
   highline
-  mechanize
+  mechanize (>= 2.7.7)
   memcache-client
   memcache_mock
   memoist
@@ -440,4 +444,4 @@ DEPENDENCIES
   whenever
 
 BUNDLED WITH
-   1.14.5
+   1.17.3
