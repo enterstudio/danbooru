@@ -31,12 +31,12 @@ gem 'radix62', '~> 1.0.1'
 gem 'streamio-ffmpeg'
 gem 'rubyzip', :require => "zip"
 gem 'stripe'
-gem 'twitter'
+gem 'twitter', '>= 5.14.0'
 gem 'aws-sdk', '~> 2'
 gem 'responders'
 gem 'highline'
 gem 'dtext_rb', :git => "https://github.com/r888888888/dtext_rb.git", :require => "dtext"
-gem 'google-api-client'
+gem 'google-api-client', '>= 0.9.9'
 gem 'cityhash'
 gem 'bigquery', :git => "https://github.com/abronte/BigQuery.git", :ref => "b92b4e0b54574e3fde7ad910f39a67538ed387ad"
 gem 'memcache_mock'
