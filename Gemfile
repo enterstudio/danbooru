@@ -7,7 +7,7 @@ gem "sass-rails"
 gem "sprockets-rails", :require => "sprockets/railtie"
 gem "uglifier"
 gem "therubyracer", :platforms => :ruby
-gem "rails", "~> 4.2.0"
+gem "rails", "~> 4.2.8"
 gem "pg"
 gem "dalli", :platforms => :ruby
 gem "memcache-client", :platforms => [:mswin, :mingw, :x64_mingw]
@@ -17,7 +17,7 @@ gem "delayed_job_active_record"
 gem "simple_form"
 gem "mechanize"
 gem "whenever", :require => false
-gem "sanitize", "~> 3.1.0"
+gem "sanitize", "~> 3.1.2"
 gem 'rmagick'
 gem 'net-sftp'
 gem 'term-ansicolor', :require => "term/ansicolor"
