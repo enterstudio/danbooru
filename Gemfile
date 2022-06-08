@@ -32,7 +32,7 @@ gem 'streamio-ffmpeg'
 gem 'rubyzip', :require => "zip"
 gem 'stripe'
 gem 'twitter'
-gem 'aws-sdk', '~> 2'
+gem 'aws-sdk', '~> 2', '>= 2.7.4'
 gem 'responders'
 gem 'highline'
 gem 'dtext_rb', :git => "https://github.com/r888888888/dtext_rb.git", :require => "dtext"
