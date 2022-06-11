@@ -15,7 +15,7 @@ gem "tzinfo-data", :platforms => [:mswin, :mingw, :x64_mingw]
 gem "delayed_job"
 gem "delayed_job_active_record"
 gem "simple_form"
-gem "mechanize"
+gem "mechanize", ">= 2.8.5"
 gem "whenever", :require => false
 gem "sanitize", "~> 3.1.0"
 gem 'rmagick'
