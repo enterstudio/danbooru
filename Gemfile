@@ -7,13 +7,13 @@ gem "sass-rails"
 gem "sprockets-rails", :require => "sprockets/railtie"
 gem "uglifier"
 gem "therubyracer", :platforms => :ruby
-gem "rails", "~> 4.2.0"
+gem "rails", "~> 5.2.8", ">= 5.2.8.1"
 gem "pg"
 gem "dalli", :platforms => :ruby
 gem "memcache-client", :platforms => [:mswin, :mingw, :x64_mingw]
 gem "tzinfo-data", :platforms => [:mswin, :mingw, :x64_mingw]
 gem "delayed_job"
-gem "delayed_job_active_record"
+gem "delayed_job_active_record", ">= 4.1.3"
 gem "simple_form"
 gem "mechanize"
 gem "whenever", :require => false
