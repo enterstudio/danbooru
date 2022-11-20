@@ -9,7 +9,7 @@ gem "uglifier"
 gem "therubyracer", :platforms => :ruby
 gem "rails", "~> 4.2.0"
 gem "pg"
-gem "dalli", :platforms => :ruby
+gem "dalli", ">= 3.2.3", :platforms => :ruby
 gem "memcache-client", :platforms => [:mswin, :mingw, :x64_mingw]
 gem "tzinfo-data", :platforms => [:mswin, :mingw, :x64_mingw]
 gem "delayed_job"
