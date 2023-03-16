@@ -7,17 +7,17 @@ gem "sass-rails"
 gem "sprockets-rails", :require => "sprockets/railtie"
 gem "uglifier"
 gem "therubyracer", :platforms => :ruby
-gem "rails", "~> 4.2.0"
+gem "rails", "~> 5.0.0"
 gem "pg"
 gem "dalli", :platforms => :ruby
 gem "memcache-client", :platforms => [:mswin, :mingw, :x64_mingw]
 gem "tzinfo-data", :platforms => [:mswin, :mingw, :x64_mingw]
 gem "delayed_job"
 gem "delayed_job_active_record"
-gem "simple_form"
+gem "simple_form", ">= 5.0.0"
 gem "mechanize"
 gem "whenever", :require => false
-gem "sanitize", "~> 3.1.0"
+gem "sanitize", "~> 5.2.1"
 gem 'rmagick'
 gem 'net-sftp'
 gem 'term-ansicolor', :require => "term/ansicolor"
@@ -29,7 +29,7 @@ gem 'capistrano-rails'
 gem 'capistrano-rbenv'
 gem 'radix62', '~> 1.0.1'
 gem 'streamio-ffmpeg'
-gem 'rubyzip', :require => "zip"
+gem 'rubyzip', '>= 1.3.0', :require => "zip"
 gem 'stripe'
 gem 'twitter'
 gem 'aws-sdk', '~> 2'
@@ -56,7 +56,7 @@ group :production do
   gem 'unicorn-worker-killer'
   gem 'newrelic_rpm'
   gem 'gctools', :platforms => :ruby
-  gem 'capistrano-deploytags', '~> 1.0.0', require: false
+  gem 'capistrano-deploytags', '~> 1.0.4', require: false
 end
 
 group :development, :test do
