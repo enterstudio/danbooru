@@ -1,23 +1,23 @@
 source 'https://rubygems.org/'
 
-gem 'dotenv-rails', :require => "dotenv/rails-now"
+gem 'dotenv-rails', '>= 2.7.6', :require => "dotenv/rails-now"
 
 gem 'protected_attributes'
-gem "sass-rails"
-gem "sprockets-rails", :require => "sprockets/railtie"
+gem "sass-rails", ">= 6.0.0"
+gem "sprockets-rails", ">= 3.0.0", :require => "sprockets/railtie"
 gem "uglifier"
 gem "therubyracer", :platforms => :ruby
-gem "rails", "~> 4.2.0"
+gem "rails", "~> 6.1.7", ">= 6.1.7.3"
 gem "pg"
-gem "dalli", :platforms => :ruby
+gem "dalli", ">= 3.2.3", :platforms => :ruby
 gem "memcache-client", :platforms => [:mswin, :mingw, :x64_mingw]
 gem "tzinfo-data", :platforms => [:mswin, :mingw, :x64_mingw]
-gem "delayed_job"
-gem "delayed_job_active_record"
-gem "simple_form"
-gem "mechanize"
+gem "delayed_job", ">= 4.1.9"
+gem "delayed_job_active_record", ">= 4.1.5"
+gem "simple_form", ">= 5.0.0"
+gem "mechanize", ">= 2.8.5"
 gem "whenever", :require => false
-gem "sanitize", "~> 3.1.0"
+gem "sanitize", "~> 5.2.1"
 gem 'rmagick'
 gem 'net-sftp'
 gem 'term-ansicolor', :require => "term/ansicolor"
@@ -29,11 +29,11 @@ gem 'capistrano-rails'
 gem 'capistrano-rbenv'
 gem 'radix62', '~> 1.0.1'
 gem 'streamio-ffmpeg'
-gem 'rubyzip', :require => "zip"
-gem 'stripe'
-gem 'twitter'
-gem 'aws-sdk', '~> 2'
-gem 'responders'
+gem 'rubyzip', '>= 1.3.0', :require => "zip"
+gem 'stripe', '>= 1.36.1'
+gem 'twitter', '>= 6.0.0'
+gem 'aws-sdk', '~> 2', '>= 2.7.4'
+gem 'responders', '>= 3.0.0'
 gem 'highline'
 gem 'dtext_rb', :git => "https://github.com/r888888888/dtext_rb.git", :require => "dtext"
 gem 'google-api-client'
@@ -42,7 +42,7 @@ gem 'bigquery', :git => "https://github.com/abronte/BigQuery.git", :ref => "b92b
 gem 'memcache_mock'
 gem 'memoist'
 gem 'daemons'
-gem 'oauth2'
+gem 'oauth2', '>= 1.4.11'
 
 # needed for looser jpeg header compat
 gem 'ruby-imagespec', :require => "image_spec", :git => "https://github.com/r888888888/ruby-imagespec.git", :branch => "exif-fixes"
@@ -56,7 +56,7 @@ group :production do
   gem 'unicorn-worker-killer'
   gem 'newrelic_rpm'
   gem 'gctools', :platforms => :ruby
-  gem 'capistrano-deploytags', '~> 1.0.0', require: false
+  gem 'capistrano-deploytags', '~> 1.0.4', require: false
 end
 
 group :development, :test do
