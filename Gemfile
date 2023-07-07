@@ -17,7 +17,7 @@ gem "delayed_job_active_record"
 gem "simple_form"
 gem "mechanize"
 gem "whenever", :require => false
-gem "sanitize", "~> 3.1.0"
+gem "sanitize", "~> 6.0.2"
 gem 'rmagick'
 gem 'net-sftp'
 gem 'term-ansicolor', :require => "term/ansicolor"
