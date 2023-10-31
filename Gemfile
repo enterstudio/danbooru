@@ -18,7 +18,7 @@ gem "simple_form"
 gem "mechanize"
 gem "whenever", :require => false
 gem "sanitize", "~> 3.1.0"
-gem 'rmagick'
+gem 'rmagick', '>= 5.3.0'
 gem 'net-sftp'
 gem 'term-ansicolor', :require => "term/ansicolor"
 gem 'diff-lcs', :require => "diff/lcs/array", :git => "https://github.com/halostatue/diff-lcs.git"
