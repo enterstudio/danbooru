@@ -1,23 +1,23 @@
 source 'https://rubygems.org/'
 
-gem 'dotenv-rails', :require => "dotenv/rails-now"
+gem 'dotenv-rails', '>= 2.7.6', :require => "dotenv/rails-now"
 
 gem 'protected_attributes'
-gem "sass-rails"
-gem "sprockets-rails", :require => "sprockets/railtie"
+gem "sass-rails", ">= 5.0.8"
+gem "sprockets-rails", ">= 3.0.0", :require => "sprockets/railtie"
 gem "uglifier"
 gem "therubyracer", :platforms => :ruby
-gem "rails", "~> 4.2.0"
+gem "rails", "~> 7.0.8", ">= 7.0.8.1"
 gem "pg"
 gem "dalli", :platforms => :ruby
 gem "memcache-client", :platforms => [:mswin, :mingw, :x64_mingw]
 gem "tzinfo-data", :platforms => [:mswin, :mingw, :x64_mingw]
 gem "delayed_job"
 gem "delayed_job_active_record"
-gem "simple_form"
-gem "mechanize"
+gem "simple_form", ">= 4.0.0"
+gem "mechanize", ">= 2.7.6"
 gem "whenever", :require => false
-gem "sanitize", "~> 3.1.0"
+gem "sanitize", "~> 4.0.0"
 gem 'rmagick'
 gem 'net-sftp'
 gem 'term-ansicolor', :require => "term/ansicolor"
@@ -33,7 +33,7 @@ gem 'rubyzip', :require => "zip"
 gem 'stripe'
 gem 'twitter'
 gem 'aws-sdk', '~> 2'
-gem 'responders'
+gem 'responders', '>= 3.0.0'
 gem 'highline'
 gem 'dtext_rb', :git => "https://github.com/r888888888/dtext_rb.git", :require => "dtext"
 gem 'google-api-client'
@@ -42,7 +42,7 @@ gem 'bigquery', :git => "https://github.com/abronte/BigQuery.git", :ref => "b92b
 gem 'memcache_mock'
 gem 'memoist'
 gem 'daemons'
-gem 'oauth2'
+gem 'oauth2', '>= 1.3.1'
 
 # needed for looser jpeg header compat
 gem 'ruby-imagespec', :require => "image_spec", :git => "https://github.com/r888888888/ruby-imagespec.git", :branch => "exif-fixes"
